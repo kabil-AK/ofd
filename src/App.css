@@ -1,0 +1,21 @@
+#root {
+  width: 100%;
+}
+.hero-banner {
+  position: relative;
+  background: url("./assets/delicious-indian-meal-with-biryani-rice-photo.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; /* or any height you want */
+  color: white;
+  z-index: 0;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  z-index: -1;
+}
